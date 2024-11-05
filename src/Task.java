@@ -14,10 +14,6 @@ public class Task {
         return description;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public Boolean getIsCompleted() {
         return isCompleted;
     }
@@ -26,7 +22,7 @@ public class Task {
         return createdTime;
     }
 
-    public void changeStatus () {
+    public void changeStatus() {
         isCompleted = !isCompleted;
     }
 }

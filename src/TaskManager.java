@@ -18,6 +18,16 @@ public class TaskManager {
 
     public void addTask(Task task) {
         tasks.add(task);
+        System.out.println("Задача создана.");
+    }
+
+    public void changeStatus (int taskNumber){
+        if (taskNumber >= tasks.size()) {
+            System.out.println("Такой задачи не существует");
+            return;
+        }
+        tasks.get(taskNumber).changeStatus();
+        System.out.println("Статус изменен");
     }
 
 }
